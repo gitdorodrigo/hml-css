@@ -43,10 +43,17 @@
             color: white;
         }
 
-        thead > tr > th{
+        div{/*fixando uma div ou qualquer outra coisa no topo não deixando rolar */
+            width: 100%;
+            height: 25px;
             position: sticky;
-            top: 0px;
+            top: -1px;
             background-color: rgb(73, 73, 73);
+            z-index: 1;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px;
         }
     </style>
 </head>
@@ -54,6 +61,7 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <div> aqui vai escrito o que quiser</div>
         <caption>
             <p>Tabale populacional do brasil</p>
         </caption>
